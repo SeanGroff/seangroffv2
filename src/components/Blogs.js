@@ -1,14 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import Colors from '../utils/Colors';
+
+const { darkText } = Colors;
 
 const BlogsWrapper = styled.main`
-  color: #000000;
+  color: ${darkText};
 `;
 
-const Blogs = () => {
+const Blogs = props => {
   return (
     <BlogsWrapper>
-      {'Test'}
+      {props.children}
     </BlogsWrapper>
   );
 };

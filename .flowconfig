@@ -1,5 +1,6 @@
 [ignore]
 .*/vscode/.*
+.*/node_modules/styled-components/.*
 .*/node_modules/.*
 .*/public/.*
 ./src/__TESTS__/.*
