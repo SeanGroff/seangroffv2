@@ -8,17 +8,20 @@
     "styled-components": "^2.0.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^3.19.0",
     "eslint-config-koality": "^1.0.0",
+    "eslint-plugin-flowtype": "^2.33.0",
     "flow-bin": "^0.47.0",
     "react-scripts": "1.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "eslint src && react-scripts test --env=jsdom",
+    "test": "yarn lint && react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "flow": "flow"
+    "flow": "flow",
+    "lint": "eslint src"
   }
 }

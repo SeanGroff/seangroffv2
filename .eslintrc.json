@@ -1,10 +1,22 @@
 {
-  "extends": "koality",
+  "parser": "babel-eslint",
+  "extends": [
+    "koality",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype"
+  ],
   "env": {
     "browser": true
   },
   "globals": {
     "it": true,
     "expect": true
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
   }
 }
