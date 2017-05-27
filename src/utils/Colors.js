@@ -1,7 +1,9 @@
-const white = '#ECF0F1';
-// const red = '#E74C3C';
-const darkBlue = '#2C3E50';
-const lightBlue = '#3498DB';
+// @flow
+
+const white: string = '#ECF0F1';
+// const red: string = '#E74C3C';
+const darkBlue: string = '#2C3E50';
+const lightBlue: string = '#3498DB';
 
 export default {
   bgColorDark: darkBlue,

@@ -5,5 +5,7 @@
   // Enable/disable JavaScript validation. (For Flow)
   "javascript.validate.enable": false,
   // Enable/disable default JavaScript formatter (For Prettier)
-  "javascript.format.enable": false
+  "javascript.format.enable": false,
+  // Formats your code using a code formatter (Prettier) on file save.
+  "editor.formatOnSave": true
 }

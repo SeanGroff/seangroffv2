@@ -1,5 +1,6 @@
 // @flow
-import React, { Component } from 'react';
+
+import React from 'react';
 import styled from 'styled-components';
 import Blogs from '../components/Blogs';
 import Hero from '../components/Hero';
@@ -10,15 +11,11 @@ const Container = styled.div`
   overflow: scroll;
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <Container>
-        <Hero />
-        <Blogs>{'Blog Posts'}</Blogs>
-      </Container>
-    );
-  }
-}
+const App = (props: {}) => (
+  <Container>
+    <Hero />
+    <Blogs>{'Blog Posts'}</Blogs>
+  </Container>
+);
 
 export default App;

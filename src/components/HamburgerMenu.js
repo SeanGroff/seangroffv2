@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import MediaQueries from '../utils/MediaQueries';
@@ -5,6 +7,18 @@ import Colors from '../utils/Colors';
 
 const { mediumUp } = MediaQueries;
 const { lightText } = Colors;
+
+const Wrapper = styled.div`
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: -14px;
+    padding: 15px;
+    content: '';
+    z-index: 10;
+  }
+`;
 
 const Lines = styled.div`
   position: relative;
@@ -34,18 +48,25 @@ const Lines = styled.div`
 `;
 
 class HamburgerMenu extends Component {
-  constructor(props) {
-    super(props);
+  state: {
+    isClosed: boolean
+  };
 
+  constructor(props: {}) {
+    super(props);
     this.state = {
       isClosed: false,
     };
   }
 
-  handleClick = () => this.setState({ isClosed: !this.state.isClosed });
+  handleClick = (): void => this.setState({ isClosed: !this.state.isClosed });
 
   render() {
-    return <Lines />;
+    return (
+      <Wrapper onClick={this.handleClick}>
+        <Lines />
+      </Wrapper>
+    );
   }
 }
 

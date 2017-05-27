@@ -5,7 +5,8 @@
     "plugin:flowtype/recommended"
   ],
   "plugins": [
-    "flowtype"
+    "flowtype",
+    "react"
   ],
   "env": {
     "browser": true
@@ -18,5 +19,8 @@
     "flowtype": {
       "onlyFilesWithFlowAnnotation": true
     }
+  },
+  "rules": {
+    "react/prefer-stateless-function": 1
   }
 }

@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import styled from 'styled-components';
 import HamburgerMenu from './HamburgerMenu';
@@ -18,7 +20,6 @@ const Wrapper = styled.div`
   box-shadow: 0 1px 3px 0 rgba(20, 20, 20, 0.8);
   ${mediumUp} {
     box-shadow: none;
-    height: 100px;
     background-color: transparent;
   };
 `;
@@ -38,7 +39,7 @@ const RightColumn = styled.div`
   position: relative;
 `;
 
-const NavBar = props => (
+const NavBar = (props: {}) => (
   <Wrapper>
     <LeftColumn>{'SG'}</LeftColumn>
     <RightColumn>
