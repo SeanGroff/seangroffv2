@@ -6,9 +6,10 @@ import HamburgerMenu from './HamburgerMenu';
 import StyledLink from './StyledLink';
 import MediaQueries from '../utils/MediaQueries';
 import Colors from '../utils/Colors';
+import '../fonts/OpenSansRegular.css';
 
 const { mediumUp } = MediaQueries;
-const { lightText, bgColorDark } = Colors;
+const { lightText, bgColorDark, hoverText } = Colors;
 
 const Wrapper = styled.div`
   display: flex;
@@ -39,12 +40,33 @@ const RightColumn = styled.div`
   position: relative;
 `;
 
+const Logo = styled.a`
+  color: ${lightText};
+  font-size: 18px;
+  font-family: OpenSans-Regular;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    color: ${hoverText};
+  }
+`;
+
 const NavBar = (props: {}) => (
   <Wrapper>
-    <LeftColumn>{'SG'}</LeftColumn>
+    <LeftColumn>
+      <Logo {...props} href="/">
+        {'SG'}
+      </Logo>
+    </LeftColumn>
     <RightColumn>
       <StyledLink href="#">
         {'about'}
+      </StyledLink>
+      <StyledLink href="#">
+        {'portfolio'}
       </StyledLink>
       <StyledLink href="#">
         {'contact me'}

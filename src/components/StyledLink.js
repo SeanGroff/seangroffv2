@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MediaQueries from '../utils/MediaQueries';
 import Colors from '../utils/Colors';
+import '../fonts/OpenSansLight.css';
 
 const { mediumUp } = MediaQueries;
 const { lightText, hoverText } = Colors;
@@ -13,8 +14,11 @@ const StyledAchorTag = styled.a`
   ${mediumUp} {
     display: inline-block;
     color: ${lightText};
-    padding: 0 15px;
-    text-transform: capitalize;
+    font-family: OpenSans-Light;
+    font-size: 13px;
+    padding: 0 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     text-decoration: none;
     &:hover {
       cursor: pointer;

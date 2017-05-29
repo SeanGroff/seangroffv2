@@ -18,6 +18,10 @@ const Wrapper = styled.div`
     content: '';
     z-index: 10;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const Lines = styled.div`

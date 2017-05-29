@@ -10,12 +10,8 @@ const BlogsWrapper = styled.main`
   color: ${darkText};
 `;
 
-const Blogs = (props: { children: string }) => {
-  return (
-    <BlogsWrapper>
-      {props.children}
-    </BlogsWrapper>
-  );
+const Blogs = (props: {}) => {
+  return <BlogsWrapper />;
 };
 
 export default Blogs;

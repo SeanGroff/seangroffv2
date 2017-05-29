@@ -4,8 +4,14 @@ import React from 'react';
 import styled from 'styled-components';
 import profilePic from '../assets/profilePic.jpg';
 import TwitterIcon from './TwitterIcon';
+import LinkedinIcon from './LinkedinIcon';
+import GithubIcon from './GithubIcon';
+import MediumIcon from './MediumIcon';
+import CodepenIcon from './CodepenIcon';
 import MediaQueries from '../utils/MediaQueries';
 import Colors from '../utils/Colors';
+import '../fonts/OpenSansBold.css';
+import '../fonts/OpenSansLight.css';
 
 const { mediumUp } = MediaQueries;
 const { bgColorLight, lightText } = Colors;
@@ -13,17 +19,13 @@ const { bgColorLight, lightText } = Colors;
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  margin-top: 20px;
+  padding: 15px;
+  margin-top: -50px;
   color: ${lightText};
-
-  ${mediumUp} {
-    justify-content: center;
-    margin-top: -50px
-  }
 `;
 
 const ProfilePic = styled.div`
@@ -34,19 +36,45 @@ const ProfilePic = styled.div`
   background-repeat: no-repeat;
   width: 150px;
   height: 150px;
+
+  ${mediumUp} {
+    width: 175px;
+    height: 175px;
+  }
 `;
 
 const NameHeader = styled.h1`
-  font-size: 48px;
-  margin: 20px 0;
+  font-size: 40px;
+  font-family: OpenSans-Bold;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid ${lightText};
+  border-bottom-color: rgba(236, 240, 241, 0.35);
+
+  ${mediumUp} {
+    font-size: 60px;
+  }
 `;
 
-const AboutMe = styled.p`
+const Occupation = styled.h3`
   font-size: 24px;
-  max-width: 650px;
+  font-family: OpenSans-Light;
+  text-transform: capitalize;
   margin: 0;
+  margin-bottom: 20px;
+
+  ${mediumUp} {
+    font-size: 30px;
+  }
+`;
+
+const IconsWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Me = (props: {}) => {
@@ -54,12 +82,14 @@ const Me = (props: {}) => {
     <Wrapper>
       <ProfilePic />
       <NameHeader>{'sean groff'}</NameHeader>
-      <AboutMe>
-        {
-          'Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Quisque id mi.'
-        }
-      </AboutMe>
-      <TwitterIcon />
+      <Occupation>{'web developer'}</Occupation>
+      <IconsWrapper>
+        <TwitterIcon />
+        <LinkedinIcon />
+        <GithubIcon />
+        <MediumIcon />
+        <CodepenIcon />
+      </IconsWrapper>
     </Wrapper>
   );
 };

@@ -14,7 +14,7 @@ const Container = styled.div`
 const App = (props: {}) => (
   <Container>
     <Hero />
-    <Blogs>{'Blog Posts'}</Blogs>
+    <Blogs />
   </Container>
 );
 
