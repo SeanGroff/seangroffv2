@@ -10,6 +10,7 @@ export default {
   bgColorLight: white,
   lightText: white,
   darkText: darkBlue,
+  lightBlueText: lightBlue,
   hoverText: lightBlue,
   transparentDarkBlue: 'rgba(44, 62, 80, 0.8)',
 };

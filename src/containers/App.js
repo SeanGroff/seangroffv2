@@ -2,8 +2,9 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import Blogs from '../components/Blogs';
 import Hero from '../components/Hero';
+import About from '../components/About';
+import Portfolio from '../components/Portfolio';
 
 const Container = styled.div`
   width: 100%;
@@ -14,7 +15,8 @@ const Container = styled.div`
 const App = (props: {}) => (
   <Container>
     <Hero />
-    <Blogs />
+    <About />
+    <Portfolio />
   </Container>
 );
 
