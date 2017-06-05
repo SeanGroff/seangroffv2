@@ -1,14 +1,12 @@
 // @flow
-
 import React from 'react';
 import styled from 'styled-components';
+import Heading from './Heading';
 import Colors from '../utils/Colors';
-import MediaQueries from '../utils/MediaQueries';
+import Globals from '../utils/Globals';
 import '../fonts/LoraRegular.css';
-import '../fonts/OpenSansBold.css';
 
-const { bgColorLight, darkText, lightBlueText } = Colors;
-const { mediumUp } = MediaQueries;
+const { bgColorLight, darkText } = Colors;
 
 const About = styled.section`
   display: flex;
@@ -16,20 +14,7 @@ const About = styled.section`
   justify-content: center;
   align-items: center;
   background-color: ${bgColorLight};
-  padding: 100px 15px;
-`;
-
-const Heading = styled.h2`
-  font-size: 28px;
-  font-family: OpenSans-Bold;
-  text-align: center;
-  text-transform: uppercase;
-  color: ${lightBlueText};
-  margin: 0 0 20px 0;
-
-  ${mediumUp} {
-    font-size: 48px;
-  }
+  padding: ${Globals.sectionPadding};
 `;
 
 const Content = styled.p`
@@ -44,7 +29,7 @@ const Content = styled.p`
 
 export default (props: {}) => {
   return (
-    <About>
+    <About id="about">
       <Heading>{'About me'}</Heading>
       <Content>
         {

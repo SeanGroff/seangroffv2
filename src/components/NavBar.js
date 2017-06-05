@@ -1,5 +1,4 @@
 // @flow
-
 import React from 'react';
 import styled from 'styled-components';
 import HamburgerMenu from './HamburgerMenu';
@@ -62,16 +61,16 @@ const NavBar = (props: {}) => (
       </Logo>
     </LeftColumn>
     <RightColumn>
-      <StyledLink href="#">
+      <StyledLink href="#about">
         {'about'}
       </StyledLink>
-      <StyledLink href="#">
+      <StyledLink href="#portfolio">
         {'portfolio'}
       </StyledLink>
-      <StyledLink href="#">
+      <StyledLink href="#resume">
         {'resume'}
       </StyledLink>
-      <StyledLink href="#">
+      <StyledLink href="#contact">
         {'contact me'}
       </StyledLink>
       <HamburgerMenu />

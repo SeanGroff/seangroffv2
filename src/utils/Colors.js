@@ -1,5 +1,4 @@
 // @flow
-
 const white: string = '#ECF0F1';
 // const red: string = '#E74C3C';
 const darkBlue: string = '#2C3E50';

@@ -1,5 +1,4 @@
 // @flow
-
 import React from 'react';
 import Icon from './Icon';
 import FaTwitterSquare from 'react-icons/lib/fa/twitter-square';
