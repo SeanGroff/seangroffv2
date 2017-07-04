@@ -35,11 +35,6 @@ const ProfilePic = styled.div`
   background-repeat: no-repeat;
   width: 150px;
   height: 150px;
-
-  ${mediumUp} {
-    width: 175px;
-    height: 175px;
-  }
 `;
 
 const NameHeader = styled.h1`
