@@ -67,9 +67,9 @@ const NavBar = (props: {}) => (
       <StyledLink href="#portfolio">
         {'portfolio'}
       </StyledLink>
-      <StyledLink href="#resume">
+      {/* <StyledLink href="#resume">
         {'resume'}
-      </StyledLink>
+      </StyledLink> */}
       <StyledLink href="#contact">
         {'contact me'}
       </StyledLink>
