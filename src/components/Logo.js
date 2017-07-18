@@ -5,9 +5,13 @@ import Colors from '../utils/Colors';
 
 const { lightText, hoverText } = Colors;
 
-const Icon = styled.a`
+const MyLogo = styled.a`
   color: ${lightText};
-  padding: 0 10px;
+  font-size: 18px;
+  font-family: OpenSans-Regular;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
   transition: color .2s linear;
 
   &:hover {
@@ -17,6 +21,10 @@ const Icon = styled.a`
   }
 `;
 
-export default (props: { children: any }) => (
-  <Icon {...props}>{props.children}</Icon>
+const Logo = (props: { children: string }) => (
+  <MyLogo {...props} href="#me">
+    {props.children}
+  </MyLogo>
 );
+
+export default Logo;

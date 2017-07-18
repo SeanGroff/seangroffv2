@@ -19,9 +19,12 @@ const StyledAchorTag = styled.a`
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
+    transition: color .2s linear;
+
     &:hover {
       cursor: pointer;
       color: ${hoverText};
+      transition: color .2s linear;      
     }
   }
 `;

@@ -1,12 +1,8 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
+import SocialIcons from './SocialIcons';
 import profilePic from '../assets/profilePic.jpg';
-import TwitterIcon from './TwitterIcon';
-import LinkedinIcon from './LinkedinIcon';
-import GithubIcon from './GithubIcon';
-import MediumIcon from './MediumIcon';
-import CodepenIcon from './CodepenIcon';
 import MediaQueries from '../utils/MediaQueries';
 import Colors from '../utils/Colors';
 import '../fonts/OpenSansBold.css';
@@ -64,26 +60,13 @@ const Occupation = styled.h3`
   }
 `;
 
-const IconsWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-`;
-
 const Me = (props: {}) => {
   return (
-    <Wrapper>
+    <Wrapper id="me">
       <ProfilePic />
       <NameHeader>{'sean groff'}</NameHeader>
       <Occupation>{'web developer'}</Occupation>
-      <IconsWrapper>
-        <TwitterIcon />
-        <LinkedinIcon />
-        <GithubIcon />
-        <MediumIcon />
-        <CodepenIcon />
-      </IconsWrapper>
+      <SocialIcons />
     </Wrapper>
   );
 };
