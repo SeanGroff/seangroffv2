@@ -3,19 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-icons": "^2.2.5",
     "styled-components": "^2.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.0.3",
     "babel-preset-flow": "^6.23.0",
-    "eslint": "^3.19.0",
-    "eslint-config-koality": "^1.0.0",
+    "eslint": "^4.12.1",
+    "eslint-config-koality": "^2.2.0",
     "eslint-plugin-flowtype": "^2.33.0",
-    "flow-bin": "^0.47.0",
-    "react-scripts": "1.0.6"
+    "flow-bin": "^0.60.1",
+    "react-scripts": "1.0.17"
   },
   "scripts": {
     "start": "react-scripts start",
