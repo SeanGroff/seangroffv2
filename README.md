@@ -1,5 +1,3 @@
-![build status](https://travis-ci.org/SeanGroff/seangroffv2.svg?branch=master)
-
 This is version 2 of my personal website.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
