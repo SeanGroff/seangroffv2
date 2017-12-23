@@ -15,6 +15,7 @@
     "eslint-config-koality": "^2.2.0",
     "eslint-plugin-flowtype": "^2.33.0",
     "flow-bin": "^0.60.1",
+    "prettier": "^1.9.2",
     "react-scripts": "1.0.17"
   },
   "scripts": {

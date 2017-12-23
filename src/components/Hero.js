@@ -9,14 +9,13 @@ import Colors from '../utils/Colors';
 const { transparentDarkBlue } = Colors;
 
 const HeroImage = styled.header`
-  background: linear-gradient(
-    ${transparentDarkBlue},
-    ${transparentDarkBlue}),
+  background: linear-gradient(${transparentDarkBlue}, ${transparentDarkBlue}),
     url(${hero});
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 `;
 
 const Hero = (props: {}) => {

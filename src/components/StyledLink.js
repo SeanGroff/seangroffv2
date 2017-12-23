@@ -19,18 +19,20 @@ const StyledAchorTag = styled.a`
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-    transition: color .2s linear;
+    transition: color 0.2s linear;
 
     &:hover {
       cursor: pointer;
       color: ${hoverText};
-      transition: color .2s linear;      
+      transition: color 0.2s linear;
     }
   }
 `;
 
 const StyledLink = (props: { children: string }) => (
-  <StyledAchorTag {...props}>{props.children}</StyledAchorTag>
+  <StyledAchorTag {...props} rel="noopener">
+    {props.children}
+  </StyledAchorTag>
 );
 
 export default StyledLink;

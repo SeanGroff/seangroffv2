@@ -33,14 +33,14 @@ const ContactForm = styled.a`
   border-radius: 5px;
   padding: 5px 10px;
   width: 100px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   ${mediumUp} {
     &:hover {
       background-color: ${ctaText};
       color: ${lightText};
       cursor: pointer;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
   }
 `;
@@ -48,7 +48,7 @@ const ContactForm = styled.a`
 const ContactMe = (props: {}) => (
   <Contact id="contact">
     <Heading>{'contact me'}</Heading>
-    <ContactForm href="mailto:sgroff04@gmail.com">
+    <ContactForm href="mailto:sgroff04@gmail.com" rel="noopener">
       {'Email Me'}
     </ContactForm>
   </Contact>

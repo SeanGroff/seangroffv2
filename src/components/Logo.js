@@ -12,17 +12,17 @@ const MyLogo = styled.a`
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: color .2s linear;
+  transition: color 0.2s linear;
 
   &:hover {
     cursor: pointer;
     color: ${hoverText};
-    transition: color .2s linear;
+    transition: color 0.2s linear;
   }
 `;
 
 const Logo = (props: { children: string }) => (
-  <MyLogo {...props} href="#me">
+  <MyLogo {...props} href="#me" rel="noopener">
     {props.children}
   </MyLogo>
 );

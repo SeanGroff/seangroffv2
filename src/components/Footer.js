@@ -38,25 +38,25 @@ const Link = styled.a`
   font-family: Lora-Regular;
   line-height: 30px;
   text-decoration: none;
-  transition: color .2s linear;
+  transition: color 0.2s linear;
 
   &:hover {
     cursor: pointer;
     color: ${hoverText};
-    transition: color .2s linear;
+    transition: color 0.2s linear;
   }
 `;
 
 const Footer = (props: {}) => (
   <Wrapper>
     <ContentWrapper>
-      <Logo>
-        {'SG'}
-      </Logo>
+      <Logo>{'SG'}</Logo>
       <Copyright>
         {'Copyright © '}
         {Globals.getYear()}
-        <Link {...props} href="#me">{' Sean Groff'}</Link>
+        <Link {...props} href="#me" rel="noopener">
+          {' Sean Groff'}
+        </Link>
       </Copyright>
       <SocialIcons />
     </ContentWrapper>

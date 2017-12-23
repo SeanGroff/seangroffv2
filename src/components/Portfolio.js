@@ -125,9 +125,7 @@ const Project = styled.a`
   height: 200px;
   position: relative;
   overflow: hidden;
-  border: 3px solid #2980B9;
-;
-
+  border: 3px solid #2980b9;
   ${smallUp} {
     width: 300px;
     height: 200px;
@@ -139,7 +137,7 @@ const Project = styled.a`
 
     &:hover {
       cursor: pointer;
-      border: 3px solid #3498DB;
+      border: 3px solid #3498db;
 
       > ${Image} {
         transform: scale(1.1);
@@ -157,22 +155,32 @@ export default (props: {}) => (
   <Portfolio id="portfolio">
     <Heading primary>{'Portfolio'}</Heading>
     <Wrapper>
-      {Projects.map((project: {
-        title: string,
-        description: string,
-        href: string,
-        image: string
-      }, index: number) => (
-        <ProjectWrapper key={index}>
-          <Project {...props} href={project.href} target="_blank">
-            <Image {...props} src={project.image} />
-            <Overlay>
-              <Title>{project.title}</Title>
-              <Description>{project.description}</Description>
-            </Overlay>
-          </Project>
-        </ProjectWrapper>
-      ))}
+      {Projects.map(
+        (
+          project: {
+            title: string,
+            description: string,
+            href: string,
+            image: string,
+          },
+          index: number
+        ) => (
+          <ProjectWrapper key={index}>
+            <Project
+              {...props}
+              href={project.href}
+              target="_blank"
+              rel="noopener"
+            >
+              <Image {...props} src={project.image} />
+              <Overlay>
+                <Title>{project.title}</Title>
+                <Description>{project.description}</Description>
+              </Overlay>
+            </Project>
+          </ProjectWrapper>
+        )
+      )}
     </Wrapper>
   </Portfolio>
 );
