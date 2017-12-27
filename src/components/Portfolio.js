@@ -174,7 +174,7 @@ export default (props: {}) => (
               target="_blank"
               rel="noopener"
             >
-              <LazyLoad height={200}>
+              <LazyLoad height={200} offset={400}>
                 <Image {...props} src={project.image} />
               </LazyLoad>
               <Overlay>
