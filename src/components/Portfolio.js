@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazy-load';
+
 import Heading from './Heading';
 import Colors from '../utils/Colors';
 import MediaQueries from '../utils/MediaQueries';
@@ -172,7 +174,9 @@ export default (props: {}) => (
               target="_blank"
               rel="noopener"
             >
-              <Image {...props} src={project.image} />
+              <LazyLoad height={200}>
+                <Image {...props} src={project.image} />
+              </LazyLoad>
               <Overlay>
                 <Title>{project.title}</Title>
                 <Description>{project.description}</Description>

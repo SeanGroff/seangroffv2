@@ -6,6 +6,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-icons": "^2.2.5",
+    "react-lazy-load": "^3.0.13",
     "styled-components": "^2.0.0"
   },
   "devDependencies": {
