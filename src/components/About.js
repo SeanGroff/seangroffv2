@@ -33,7 +33,7 @@ export default (props: {}) => {
       <Heading>{'About me'}</Heading>
       <Content>
         {
-          'I am a Web Developer based out of Kansas City specializing in front end development. I am well versed with React and React Native. Learning new things and staying on the bleeding edge of JavaScript is my passion. I seek perfection when it comes to responsive web design styling. I am experienced with all stages of the development cycle for dynamic web projects and mobile apps using React Native.'
+          'I am a Web Developer based out of Kansas City specializing in front end development. I am well versed with React and React Native. Learning new things and staying on the bleeding edge of JavaScript is my passion. When given designs I strive for pixel perfect responsive styles. I am experienced with all stages of the development cycle for dynamic web apps and mobile apps using React Native.'
         }
       </Content>
     </About>
